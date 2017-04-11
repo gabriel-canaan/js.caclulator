@@ -5,140 +5,115 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>jscalculator</title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-<link rel="stylesheet" href="calc.css">
+<link rel="stylesheet" href="bootcalc.css">
 </head>
+
 <body>
-<div class="container pb-calc-container">
-    <div class="row">
-        <div class="col-md-3 offset-md-5">
-            <div class="card card-info">
-                <div class="card-header">
-                    <label>Simple Calculator</label>
+    <div class="calculator">
+        <div class="row">
+            <div class="col-md-3 offset-md-3">
+                <h1> Abacus <h1>
+        <!-- display screen -->
+                <div class="displayScreen">
+                    <input type="text" class="form-control" placeholder="2 + 2 = 5">
+                  </input>
                 </div>
-                <div class="card-block pb-calc-panel-body">
-                    <input type="text" class="form-control" placeholder="2 + 2 = 4">
+        <!-- -->
 
-                    <hr class="pb-calc-hr">
-                    <div class="row">
+                <br>
+        
+                <div class="row">
                         <div class="col-md-12">
-                            <div class="row" style="padding-bottom: 5px;">
+                            <div class="row">
                                 <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn"><span class="fa fa-percent"></span></button>
+                                    <button class="btn num-btn">CE</button>
                                 </div>
                                 <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn"><span class="fa fa-check"></span></button>
+                                    <button class="btn num-btn">C</button>
                                 </div>
                                 <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn"><span class="fa fa-superscript"></span></button>
+                                    <button class="btn num-btn"><span class="fa fa-arrow-circle-o-left"></span></button>
                                 </div>
                                 <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn"><span class="fa fa-arrows"></span></button>
+                                    <button class="btn opp-btn"><strong>/</strong></button>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn num-btn">7</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn num-btn">8</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn num-btn">9</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn opp-btn"><span class="fa fa-times fa-lg"></span>-</button>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn num-btn">4</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn num-btn">5</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn num-btn">6</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn opp-btn"><span class="fa fa-minus"></span>+</button>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn num-btn">1</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn num-btn">2</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn num-btn">3</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn opp-btn"><span class="fa fa-plus"></span>x</button>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn opp-btn"><span class="fa fa-calculator">%</span></button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn num-btn">0</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn num-btn">.</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn opp-btn"><strong>=</strong></button>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row" style="background: #b3ffff;">
-                        <div class="col-md-12">
-                            <div class="row" style="padding-bottom: 5px;">
-                                <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn">CE</button>
-                                </div>
-                                <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn">C</button>
-                                </div>
-                                <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn"><span class="fa fa-arrow-circle-o-left"></span></button>
-                                </div>
-                                <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn"><strong>/</strong></button>
-                                </div>
-                            </div>
-                            <div class="row" style="padding-bottom: 5px;">
-                                <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn">7</button>
-                                </div>
-                                <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn">8</button>
-                                </div>
-                                <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn">9</button>
-                                </div>
-                                <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn"><span class="fa fa-times fa-lg"></span>-</button>
-                                </div>
-                            </div>
-                            <div class="row" style="padding-bottom: 5px;">
-                                <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn">4</button>
-                                </div>
-                                <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn">5</button>
-                                </div>
-                                <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn">6</button>
-                                </div>
-                                <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn"><span class="fa fa-minus"></span>+</button>
-                                </div>
-                            </div>
-                            <div class="row" style="padding-bottom: 5px;">
-                                <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn">1</button>
-                                </div>
-                                <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn">2</button>
-                                </div>
-                                <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn">3</button>
-                                </div>
-                                <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn"><span class="fa fa-plus"></span>x</button>
-                                </div>
-                            </div>
-                            <div class="row" style="padding-bottom: 5px;">
-                                <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn"><span class="fa fa-calculator">%</span></button>
-                                </div>
-                                <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn">0</button>
-                                </div>
-                                <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn">.</button>
-                                </div>
-                                <div class="col-xs-3 col-sm-3 col-md-3">
-                                    <button class="btn pb-calc-btn"><strong>=</strong></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <!-- col md 12 -->
+
                 </div>
+                <!--row of the above pad-->
             </div>
+            <!--col md 3-->
         </div>
+        <!--row-->
     </div>
-</div>
+    <!--calculator-->
 
-<style>
-    .pb-calc-container {
-        font-family: Lato;
-    }
 
-    .pb-calc-btn {
-        border: none;
-        background: none;
-        font-size: 20px;
-    }
 
-        .pb-calc-btn:hover {
-            background: blue;
-            color: white;
-        }
-
-    .pb-calc-panel-body {
-        padding-bottom: 0;
-        text-align: center;
-    }
-</style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
